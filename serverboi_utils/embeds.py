@@ -86,10 +86,13 @@ def form_server_embed(
     embed.add_field(name="Game", value=game, inline=True)
 
     if active:
-        info = a2s.info((ip, int(port)))
-        embed.add_field(
-            name="Players", value=f"{info.player_count}/{info.max_players}", inline=True
-        )
+        try:
+            info = a2s.info((ip, int(port)))
+        except a2s.socket.timeout as error:
+            value = "Server unreachable"
+        else:
+            value = f"{info.player_count}/{info.max_players}"
+            embed.add_field(name="Players", value=value, inline=True)
 
     embed.set_footer(
         text=f"Owner: {owner} | 🌎 Hosted on {service} in region {region.name} | 🕒 Pulled at {strftime('%H:%M:%S UTC', gmtime())}"
