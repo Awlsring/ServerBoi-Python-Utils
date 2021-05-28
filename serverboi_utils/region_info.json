@@ -45,6 +45,35 @@
                 "location": "Nevada",
                 "emoji": "🇺🇸"
             }
+        ],
+        "linode": [
+            {
+                "name": "us-west",
+                "location": "California",
+                "city": "Fremont",
+                "emoji": "🇺🇸"
+            }
+        ],
+        "vultr": [
+            {
+                "name": "lax",
+                "location": "California",
+                "city": "Los Angeles",
+                "emoji": "🇺🇸"
+            },
+            {
+                
+                "name": "sjc",
+                "location": "California",
+                "city": "Silicon Valley",
+                "emoji": "🇺🇸"
+            },
+            {
+                "name": "sea",
+                "location": "Washington",
+                "city": "Seattle",
+                "emoji": "🇺🇸"
+            }
         ]
     },
     "US-East": {
@@ -81,6 +110,41 @@
             {
                 "name": "us-east4",
                 "location": "Virginia",
+                "emoji": "🇺🇸"
+            }
+        ],
+        "linode": [
+            {
+                "name": "us-east",
+                "location": "New Jersey",
+                "city": "Newark",
+                "emoji": "🇺🇸"
+            },
+            {
+                "name": "us-southeast",
+                "location": "Georgia",
+                "city": "Atlanta",
+                "emoji": "🇺🇸"
+            }
+        ],
+        "vultr": [
+            {
+                "name": "atl",
+                "location": "Georgia",
+                "city": "Atlanta",
+                "emoji": "🇺🇸"
+            },
+            {
+                
+                "name": "mia",
+                "location": "Florida",
+                "city": "Miami",
+                "emoji": "🇺🇸"
+            },
+            {
+                "name": "ewr",
+                "location": "New Jersey",
+                "city": "Newark",
                 "emoji": "🇺🇸"
             }
         ]
@@ -121,13 +185,36 @@
                 "location": "Iowa",
                 "emoji": "🇺🇸"
             }
+        ],
+        "linode": [
+            {
+                "name": "us-central",
+                "location": "Texas",
+                "city": "Dallas",
+                "emoji": "🇺🇸"
+            }
+        ],
+        "vultr": [
+            {
+                "name": "dfw",
+                "location": "Texas",
+                "city": "Dallas",
+                "emoji": "🇺🇸"
+            },
+            {
+                
+                "name": "ord",
+                "location": "Illinois",
+                "city": "Chicago",
+                "emoji": "🇺🇸"
+            }
         ]
     },
     "Canada": {
         "aws": [
             {
                 "name": "ca-central-1",
-                "location": "Central",
+                "location": "Ontario",
                 "emoji": "🇨🇦"
             }
         ],
@@ -147,6 +234,22 @@
             {
                 "name": "northamerica-northeast1",
                 "location": "Québec",
+                "emoji": "🇨🇦"
+            }
+        ],
+        "linode": [
+            {
+                "name": "ca-central",
+                "location": "Ontario",
+                "city": "Toronto",
+                "emoji": "🇨🇦"
+            }
+        ],
+        "vultr": [
+            {
+                "name": "yto",
+                "location": "Ontario",
+                "city": "Toronto",
                 "emoji": "🇨🇦"
             }
         ]
@@ -191,6 +294,28 @@
                 "name": "europe-central2",
                 "location": "Poland",
                 "emoji": "🇵🇱"
+            }
+        ],
+        "linode": [
+            {
+                "name": "eu-central",
+                "location": "Germany",
+                "city": "Frankfurt",
+                "emoji": "🇩🇪"
+            }
+        ],
+        "vultr": [
+            {
+                "name": "fra",
+                "location": "Germany",
+                "city": "Frankfurt",
+                "emoji": "🇩🇪"
+            },
+            {
+                "name": "ams",
+                "location": "Netherlands",
+                "city": "Amsterdam",
+                "emoji": "🇳🇱"
             }
         ]
     },
@@ -244,6 +369,28 @@
                 "name": "europe-west2",
                 "location": "England",
                 "emoji": "🇬🇧"
+            }
+        ],
+        "linode": [
+            {
+                "name": "eu-west",
+                "location": "England",
+                "city": "London",
+                "emoji": "🇬🇧"
+            }
+        ],
+        "vultr": [
+            {
+                "name": "lhr",
+                "location": "England",
+                "city": "London",
+                "emoji": "🇬🇧"
+            },
+            {
+                "name": "cdg",
+                "location": "France",
+                "city": "Paris",
+                "emoji": "🇫🇷"
             }
         ]
     },

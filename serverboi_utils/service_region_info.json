@@ -1,260 +1,400 @@
 {
-    "us-west-1": {
-        "sb_region": "US-West",
-        "location": "California",
-        "emoji": "🇺🇸",
-        "service": "aws"
-    },
-    "us-west-2": {
-        "location": "Oregon",
-        "emoji": "🇺🇸",
-        "sb_region": "US-West",
-        "service": "aws"
-    },
-    "us-east-1": {
-        "location": "Virginia",
-        "emoji": "🇺🇸",
-        "sb_region": "US-East",
-        "service": "aws"
-    },
-    "us-east-2" : {
-        "location": "Ohio",
-        "emoji": "🇺🇸",
-        "sb_region": "US-East",
-        "service": "aws"
-    },
-    "ca-central-1" :{
-        "location": "Central",
-        "emoji": "🇨🇦",
-        "sb_region": "Canada",
-        "service": "aws"
-    },
-    "eu-central-1": {
-        "location": "Germany",
-        "emoji": "🇩🇪",
-        "sb_region": "EU-Central",
-        "service": "aws"
-    },
-    "eu-west-1": {
-        "location": "Ireland",
-        "emoji": "🇮🇪",
-        "sb_region": "EU-West",
-        "service": "aws"
-    }, 
-    "eu-west-2": {
-        "location": "England",
-        "emoji": "🇬🇧",
-        "sb_region": "EU-West",
-        "service": "aws"
-    },
-    "eu-west-3": {
-        "location": "France",
-        "emoji": "🇫🇷",
-        "sb_region": "EU-West",
-        "service": "aws"
-    },
-    "eu-south-1": {
-        "location": "Italy",
-        "emoji": "🇮🇹",
-        "sb_region": "EU-South",
-        "service": "aws"
-    },
-    "eu-north-1": {
-        "location": "Sweden",
-        "emoji": "🇸🇪",
-        "sb_region": "EU-North",
-        "service": "aws"
-    },
-    "westus" : {
-        "location": "California",
-        "emoji": "🇺🇸",
-        "sb_region": "US-West",
-        "service": "azure"
-    },
-    "westus2": {
-        "location": "Washington",
-        "emoji": "🇺🇸",
-        "sb_region": "US-West",
-        "service": "azure"
-    },
-    "eastus": {
-        "location": "Virginia",
-        "emoji": "🇺🇸",
-        "sb_region": "US-East",
-        "service": "azure"
-    },
-    "eastus2": {
-        "location": "Virginia",
-        "emoji": "🇺🇸",
-        "sb_region": "US-East",
-        "service": "azure"
-    },
-    "centralus": {
-        "location": "Iowa",
-        "emoji": "🇺🇸",
-        "sb_region": "US-Central",
-        "service": "azure"
-    },
-    "northcentralus": {
-        "location": "Illinois",
-        "emoji": "🇺🇸",
-        "sb_region": "US-Central",
-        "service": "azure"
-    },
-    "southcentralus": {
-        "location": "Texas",
-        "emoji": "🇺🇸",
-        "sb_region": "US-Central",
-        "service": "azure"
-    },
-    "westcentralus": {
-        "location": "Wyoming",
-        "emoji": "🇺🇸",
-        "sb_region": "US-Central",
-        "service": "azure"
-    },
-    "canadacentral": {
-        "location": "Ontario",
-        "emoji": "🇨🇦",
-        "sb_region": "Canada",
-        "service": "azure"
-    },
-    "canadaeast": {
-        "location": "Québec",
-        "emoji": "🇨🇦",
-        "sb_region": "Canada",
-        "service": "azure"
-    },
-    "westeurope": {
-        "location": "Netherlands",
-        "emoji": "🇳🇱",
-        "sb_region": "EU-Central",
-        "service": "azure"
-    },
-    "germanywestcentral": {
-        "location": "Germany",
-        "emoji": "🇩🇪",
-        "sb_region": "EU-Central",
-        "service": "azure"
-    },
-    "switzerlandnorth": {
-        "location": "Switzerland",
-        "emoji": "🇨🇭",
-        "sb_region": "EU-Central",
-        "service": "azure"
-    },
-    "northeurope": {
-        "location": "Ireland",
-        "emoji": "🇮🇪",
-        "sb_region": "EU-West",
-        "service": "azure"
-    },
-    "francecentral": {
-        "location": "France",
-        "emoji": "🇫🇷",
-        "sb_region": "EU-West",
-        "service": "azure"
-    },
-    "uksouth": {
-        "location": "England",
-        "emoji": "🇬🇧",
-        "sb_region": "EU-West",
-        "service": "azure"
-    },
-    "ukwest": {
-        "location": "England",
-        "emoji": "🇬🇧",
-        "sb_region": "EU-West",
-        "service": "azure"
-    },
-    "norwayeast": {
-        "location": "Norway",
-        "emoji": "🇳🇴",
-        "sb_region": "EU-North",
-        "service": "azure"
-    },
-    "us-west1": {
-        "location": "Oregon",
-        "emoji": "🇺🇸",
-        "sb_region": "US-West",
-        "service": "gcp"
-    },
-    "us-west2": {
-        "location": "California",
-        "emoji": "🇺🇸",
-        "sb_region": "US-West",
-        "service": "gcp"
-    },
-    "us-west3": {
-        "location": "Utah",
-        "emoji": "🇺🇸",
-        "sb_region": "US-West",
-        "service": "gcp"
-    },
-    "us-west4": {
-        "location": "Nevada",
-        "emoji": "🇺🇸",
-        "sb_region": "US-West",
-        "service": "gcp"
-    },
-    "us-east1": {
-        "location": "South Carolina",
-        "emoji": "🇺🇸",
-        "sb_region": "US-East",
-        "service": "gcp"
-    },
-    "us-east4": {
-        "location": "Virginia",
-        "emoji": "🇺🇸",
-        "sb_region": "US-East",
-        "service": "gcp"
-    },
-    "us-central1": {
-        "location": "Iowa",
-        "emoji": "🇺🇸",
-        "sb_region": "US-Central",
-        "service": "gcp"
-    },
-    "northamerica-northeast1": {
-        "location": "Québec",
-        "emoji": "🇨🇦",
-        "sb_region": "Canada",
-        "service": "gcp"
-    },
-    "europe-west3": {
-        "location": "Germany",
-        "emoji": "🇩🇪",
-        "sb_region": "EU-Central",
-        "service": "gcp"
-    },
-    "europe-west4": {
-        "location": "Netherlands",
-        "emoji": "🇳🇱",
-        "sb_region": "EU-Central",
-        "service": "gcp"
-    },
-    "europe-central2": {
-        "location": "Poland",
-        "emoji": "🇵🇱",
-        "sb_region": "EU-Central",
-        "service": "gcp"
-    },
-    "europe-west1": {
-        "location": "Belgium",
-        "emoji": "🇧🇪",
-        "sb_region": "EU-West",
-        "service": "gcp"
-    },
-    "europe-west2": {
-        "location": "England",
-        "emoji": "🇬🇧",
-        "sb_region": "EU-West",
-        "service": "gcp"
-    },
-    "europe-north1": {
-        "location": "Finland",
-        "emoji": "🇫🇮",
-        "sb_region": "EU-North",
-        "service": "gcp"
-    }
+  "us-west-1": {
+    "sb_region": "US-West",
+    "location": "California",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "aws"
+  },
+  "us-west-2": {
+    "sb_region": "US-West",
+    "location": "Oregon",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "aws"
+  },
+  "westus": {
+    "sb_region": "US-West",
+    "location": "California",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "azure"
+  },
+  "westus2": {
+    "sb_region": "US-West",
+    "location": "Washington",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "azure"
+  },
+  "us-west1": {
+    "sb_region": "US-West",
+    "location": "Oregon",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "gcp"
+  },
+  "us-west2": {
+    "sb_region": "US-West",
+    "location": "California",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "gcp"
+  },
+  "us-west3": {
+    "sb_region": "US-West",
+    "location": "Utah",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "gcp"
+  },
+  "us-west4": {
+    "sb_region": "US-West",
+    "location": "Nevada",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "gcp"
+  },
+  "us-west": {
+    "sb_region": "US-West",
+    "location": "California",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "linode",
+    "city": "Fremont"
+  },
+  "lax": {
+    "sb_region": "US-West",
+    "location": "California",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "vultr",
+    "city": "Los Angeles"
+  },
+  "sjc": {
+    "sb_region": "US-West",
+    "location": "California",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "vultr",
+    "city": "Silicon Valley"
+  },
+  "sea": {
+    "sb_region": "US-West",
+    "location": "Washington",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "vultr",
+    "city": "Seattle"
+  },
+  "us-east-1": {
+    "sb_region": "US-East",
+    "location": "Virginia",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "aws"
+  },
+  "us-east-2": {
+    "sb_region": "US-Central",
+    "location": "Ohio",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "aws"
+  },
+  "eastus": {
+    "sb_region": "US-East",
+    "location": "Virginia",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "azure"
+  },
+  "eastus2": {
+    "sb_region": "US-East",
+    "location": "Virginia",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "azure"
+  },
+  "us-east1": {
+    "sb_region": "US-East",
+    "location": "South Carolina",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "gcp"
+  },
+  "us-east4": {
+    "sb_region": "US-East",
+    "location": "Virginia",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "gcp"
+  },
+  "us-east": {
+    "sb_region": "US-East",
+    "location": "New Jersey",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "linode",
+    "city": "Newark"
+  },
+  "us-southeast": {
+    "sb_region": "US-East",
+    "location": "Georgia",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "linode",
+    "city": "Atlanta"
+  },
+  "atl": {
+    "sb_region": "US-East",
+    "location": "Georgia",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "vultr",
+    "city": "Atlanta"
+  },
+  "mia": {
+    "sb_region": "US-East",
+    "location": "Florida",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "vultr",
+    "city": "Miami"
+  },
+  "ewr": {
+    "sb_region": "US-East",
+    "location": "New Jersey",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "vultr",
+    "city": "Newark"
+  },
+  "centralus": {
+    "sb_region": "US-Central",
+    "location": "Iowa",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "azure"
+  },
+  "northcentralus": {
+    "sb_region": "US-Central",
+    "location": "Illinois",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "azure"
+  },
+  "southcentralus": {
+    "sb_region": "US-Central",
+    "location": "Texas",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "azure"
+  },
+  "westcentralus": {
+    "sb_region": "US-Central",
+    "location": "Wyoming",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "azure"
+  },
+  "us-central1": {
+    "sb_region": "US-Central",
+    "location": "Iowa",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "gcp"
+  },
+  "us-central": {
+    "sb_region": "US-Central",
+    "location": "Texas",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "linode",
+    "city": "Dallas"
+  },
+  "dfw": {
+    "sb_region": "US-Central",
+    "location": "Texas",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "vultr",
+    "city": "Dallas"
+  },
+  "ord": {
+    "sb_region": "US-Central",
+    "location": "Illinois",
+    "emoji": "\ud83c\uddfa\ud83c\uddf8",
+    "service": "vultr",
+    "city": "Chicago"
+  },
+  "ca-central-1": {
+    "sb_region": "Canada",
+    "location": "Ontario",
+    "emoji": "\ud83c\udde8\ud83c\udde6",
+    "service": "aws"
+  },
+  "canadacentral": {
+    "sb_region": "Canada",
+    "location": "Ontario",
+    "emoji": "\ud83c\udde8\ud83c\udde6",
+    "service": "azure"
+  },
+  "canadaeast": {
+    "sb_region": "Canada",
+    "location": "Qu\u00e9bec",
+    "emoji": "\ud83c\udde8\ud83c\udde6",
+    "service": "azure"
+  },
+  "northamerica-northeast1": {
+    "sb_region": "Canada",
+    "location": "Qu\u00e9bec",
+    "emoji": "\ud83c\udde8\ud83c\udde6",
+    "service": "gcp"
+  },
+  "ca-central": {
+    "sb_region": "Canada",
+    "location": "Ontario",
+    "emoji": "\ud83c\udde8\ud83c\udde6",
+    "service": "linode",
+    "city": "Toronto"
+  },
+  "yto": {
+    "sb_region": "Canada",
+    "location": "Ontario",
+    "emoji": "\ud83c\udde8\ud83c\udde6",
+    "service": "vultr",
+    "city": "Toronto"
+  },
+  "eu-central-1": {
+    "sb_region": "EU-Central",
+    "location": "Germany",
+    "emoji": "\ud83c\udde9\ud83c\uddea",
+    "service": "aws"
+  },
+  "westeurope": {
+    "sb_region": "EU-Central",
+    "location": "Netherlands",
+    "emoji": "\ud83c\uddf3\ud83c\uddf1",
+    "service": "azure"
+  },
+  "germanywestcentral": {
+    "sb_region": "EU-Central",
+    "location": "Germany",
+    "emoji": "\ud83c\udde9\ud83c\uddea",
+    "service": "azure"
+  },
+  "switzerlandnorth": {
+    "sb_region": "EU-Central",
+    "location": "Switzerland",
+    "emoji": "\ud83c\udde8\ud83c\udded",
+    "service": "azure"
+  },
+  "europe-west3": {
+    "sb_region": "EU-Central",
+    "location": "Germany",
+    "emoji": "\ud83c\udde9\ud83c\uddea",
+    "service": "gcp"
+  },
+  "europe-west4": {
+    "sb_region": "EU-Central",
+    "location": "Netherlands",
+    "emoji": "\ud83c\uddf3\ud83c\uddf1",
+    "service": "gcp"
+  },
+  "europe-central2": {
+    "sb_region": "EU-Central",
+    "location": "Poland",
+    "emoji": "\ud83c\uddf5\ud83c\uddf1",
+    "service": "gcp"
+  },
+  "eu-central": {
+    "sb_region": "EU-Central",
+    "location": "Germany",
+    "emoji": "\ud83c\udde9\ud83c\uddea",
+    "service": "linode",
+    "city": "Frankfurt"
+  },
+  "fra": {
+    "sb_region": "EU-Central",
+    "location": "Germany",
+    "emoji": "\ud83c\udde9\ud83c\uddea",
+    "service": "vultr",
+    "city": "Frankfurt"
+  },
+  "ams": {
+    "sb_region": "EU-Central",
+    "location": "Netherlands",
+    "emoji": "\ud83c\uddf3\ud83c\uddf1",
+    "service": "vultr",
+    "city": "Amsterdam"
+  },
+  "eu-west-1": {
+    "sb_region": "EU-West",
+    "location": "Ireland",
+    "emoji": "\ud83c\uddee\ud83c\uddea",
+    "service": "aws"
+  },
+  "eu-west-2": {
+    "sb_region": "EU-West",
+    "location": "England",
+    "emoji": "\ud83c\uddec\ud83c\udde7",
+    "service": "aws"
+  },
+  "eu-west-3": {
+    "sb_region": "EU-West",
+    "location": "France",
+    "emoji": "\ud83c\uddeb\ud83c\uddf7",
+    "service": "aws"
+  },
+  "northeurope": {
+    "sb_region": "EU-West",
+    "location": "Ireland",
+    "emoji": "\ud83c\uddee\ud83c\uddea",
+    "service": "azure"
+  },
+  "francecentral": {
+    "sb_region": "EU-West",
+    "location": "France",
+    "emoji": "\ud83c\uddeb\ud83c\uddf7",
+    "service": "azure"
+  },
+  "uksouth": {
+    "sb_region": "EU-West",
+    "location": "England",
+    "emoji": "\ud83c\uddec\ud83c\udde7",
+    "service": "azure"
+  },
+  "ukwest": {
+    "sb_region": "EU-West",
+    "location": "England",
+    "emoji": "\ud83c\uddec\ud83c\udde7",
+    "service": "azure"
+  },
+  "europe-west1": {
+    "sb_region": "EU-West",
+    "location": "Belgium",
+    "emoji": "\ud83c\udde7\ud83c\uddea",
+    "service": "gcp"
+  },
+  "europe-west2": {
+    "sb_region": "EU-West",
+    "location": "England",
+    "emoji": "\ud83c\uddec\ud83c\udde7",
+    "service": "gcp"
+  },
+  "eu-west": {
+    "sb_region": "EU-West",
+    "location": "England",
+    "emoji": "\ud83c\uddec\ud83c\udde7",
+    "service": "linode",
+    "city": "London"
+  },
+  "lhr": {
+    "sb_region": "EU-West",
+    "location": "England",
+    "emoji": "\ud83c\uddec\ud83c\udde7",
+    "service": "vultr",
+    "city": "London"
+  },
+  "cdg": {
+    "sb_region": "EU-West",
+    "location": "France",
+    "emoji": "\ud83c\uddeb\ud83c\uddf7",
+    "service": "vultr",
+    "city": "Paris"
+  },
+  "eu-south-1": {
+    "sb_region": "EU-South",
+    "location": "Italy",
+    "emoji": "\ud83c\uddee\ud83c\uddf9",
+    "service": "aws"
+  },
+  "eu-north-1": {
+    "sb_region": "EU-North",
+    "location": "Sweden",
+    "emoji": "\ud83c\uddf8\ud83c\uddea",
+    "service": "azure"
+  },
+  "norwayeast": {
+    "sb_region": "EU-North",
+    "location": "Norway",
+    "emoji": "\ud83c\uddf3\ud83c\uddf4",
+    "service": "azure"
+  },
+  "europe-north1": {
+    "sb_region": "EU-North",
+    "location": "Finland",
+    "emoji": "\ud83c\uddeb\ud83c\uddee",
+    "service": "gcp"
+  }
 }
