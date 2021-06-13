@@ -38,6 +38,7 @@ def form_response_data(**kwargs) -> dict:
     print(kwargs)
     embeds = kwargs.get("embeds")
     content = kwargs.get("content")
+    components = kwargs.get("components")
 
     data = {"flags": 64}
 
@@ -50,4 +51,41 @@ def form_response_data(**kwargs) -> dict:
     if content:
         data["content"] = content
 
+    if components:
+        if components == "server":
+            data["components"] = _server_components()
+
     return data
+
+
+def _server_components() -> list:
+    return [
+        {
+            "type": 1,
+            "components": [
+                {
+                    "type": 2,
+                    "label": "Start",
+                    "style": 1,
+                    "custom_id": "1.start",
+                    "emoji": {"id": None, "name": "🟢"},
+                },
+                {
+                    "type": 2,
+                    "label": "Stop",
+                    "style": 2,
+                    "custom_id": "1.stop",
+                    "emoji": {"id": None, "name": "🔴"},
+                    "disabled": True,
+                },
+                {
+                    "type": 2,
+                    "label": "Reboot",
+                    "style": 2,
+                    "custom_id": "1.restart",
+                    "emoji": {"id": None, "name": "🔁"},
+                    "disabled": True,
+                },
+            ],
+        },
+    ]

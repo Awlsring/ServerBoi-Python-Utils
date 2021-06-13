@@ -52,7 +52,7 @@ def form_server_embed(
         description = f"Connect: steam://connect/{address}"
 
     embed = Embed(
-        title=f"{server_name}",
+        title=f"{server_name} ({server_id})",
         color=Color.blurple(),
         description=description,
     )
