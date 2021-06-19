@@ -33,6 +33,15 @@ def form_workflow_embed(
     return embed
 
 
+def get_thumbnail(game: str) -> str:
+    thumbnails = {
+        "ns2": "https://wiki.naturalselection2.com/images/c/c9/Cyst_grow.gif",
+        "csgo": "https://thumbs.gfycat.com/AffectionateTastyFirefly-size_restricted.gif"
+    }
+
+    return thumbnails[game]
+
+
 def form_server_embed(
     server_name: str,
     server_id: str,
@@ -44,13 +53,38 @@ def form_server_embed(
     owner: str,
     service: str,
 ) -> Embed:
-    # Set address
     if ip is None:
         address = "No address while inactive"
         description = "\u200B"
     else:
         address = f"{ip}:{port}"
         description = f"Connect: steam://connect/{address}"
+
+    state, state_emoji = translate_state(service, status)
+
+    if state == "running":
+        active = True
+    else:
+        active = False
+
+    if active:
+        query_port = int(port)
+        try:
+            info = a2s.info((ip, query_port))
+            print(info)
+        except socket.timeout:
+            print("Trying next")
+            try:
+                info = a2s.info((ip, query_port + 1))
+                description = "Direct connection not supported"
+                print(info)
+            except socket.timeout:
+                player_value = "Error contacting server"
+        except Exception as error:
+            player_value = "Error contacting server"
+            print(error)
+        else:
+            player_value = f"{info.player_count}/{info.max_players}"
 
     embed = Embed(
         title=f"{server_name} ({server_id})",
@@ -59,15 +93,8 @@ def form_server_embed(
     )
 
     embed.set_thumbnail(
-        url="https://i.kym-cdn.com/entries/icons/original/000/022/255/tumblr_inline_o58r6dmSfe1suaed2_500.gif"
+        url=get_thumbnail(game)
     )
-
-    state, state_emoji = translate_state(service, status)
-
-    if state == "running":
-        active = True
-    else:
-        active = False
 
     embed.add_field(name="Status", value=f"{state_emoji} {state}", inline=True)
 
@@ -86,25 +113,7 @@ def form_server_embed(
 
     embed.add_field(name="Game", value=game, inline=True)
 
-    if active:
-        query_port = int(port)
-        try:
-            info = a2s.info((ip, query_port))
-            print(info)
-        except socket.timeout:
-            print("Trying next")
-            try:
-                info = a2s.info((ip, query_port + 1))
-                embed.description = "Direct connection not supported"
-                print(info)
-            except socket.timeout:
-                value = "Error contacting server"
-        except Exception as error:
-            value = "Error contacting server"
-            print(error)
-        else:
-            value = f"{info.player_count}/{info.max_players}"
-            embed.add_field(name="Players", value=value, inline=True)
+    embed.add_field(name="Players", value=player_value, inline=True)
 
     embed.set_footer(
         text=f"Owner: {owner} | 🌎 Hosted on {service} in region {region.name} | 🕒 Pulled at {strftime('%H:%M:%S UTC', gmtime())}"
