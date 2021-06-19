@@ -57,8 +57,14 @@ def form_response_data(**kwargs) -> dict:
 
     return data
 
+    if components and server_id:
+        if components == "server":
+            data["components"] = _server_components(server_id)
 
-def _server_components() -> list:
+    return data
+
+
+def _server_components(server_id: str) -> list:
     return [
         {
             "type": 1,
@@ -67,14 +73,14 @@ def _server_components() -> list:
                     "type": 2,
                     "label": "Start",
                     "style": 1,
-                    "custom_id": "1.start",
+                    "custom_id": f"{server_id}.start",
                     "emoji": {"id": None, "name": "🟢"},
                 },
                 {
                     "type": 2,
                     "label": "Stop",
                     "style": 1,
-                    "custom_id": "1.stop",
+                    "custom_id": f"{server_id}.stop",
                     "emoji": {"id": None, "name": "🔴"},
                     "disabled": False,
                 },
@@ -82,7 +88,7 @@ def _server_components() -> list:
                     "type": 2,
                     "label": "Reboot",
                     "style": 1,
-                    "custom_id": "1.restart",
+                    "custom_id": f"{server_id}.restart",
                     "emoji": {"id": None, "name": "🔁"},
                     "disabled": False,
                 },
