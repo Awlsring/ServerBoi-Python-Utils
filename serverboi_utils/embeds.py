@@ -87,12 +87,19 @@ def form_server_embed(
     embed.add_field(name="Game", value=game, inline=True)
 
     if active:
+        query_port = int(port)
         try:
-            info = a2s.info((ip, int(port + 1)))
+            info = a2s.info((ip, query_port))
+            print(info)
         except socket.timeout:
-            value = "Server unreachable"
+            print("timeout")
+            if port == query_port:
+                query_port = int(port + 1)
+            else:
+                query_port = int(port)
         except Exception as error:
             value = "Error contacting server"
+            print(error)
         else:
             value = f"{info.player_count}/{info.max_players}"
             embed.add_field(name="Players", value=value, inline=True)
