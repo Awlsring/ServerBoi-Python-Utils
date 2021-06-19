@@ -92,11 +92,13 @@ def form_server_embed(
             info = a2s.info((ip, query_port))
             print(info)
         except socket.timeout:
-            print("timeout")
-            if port == query_port:
-                query_port = int(port + 1)
-            else:
-                query_port = int(port)
+            print("Trying next")
+            try:
+                info = a2s.info((ip, query_port + 1))
+                embed.description = "Direct connection not supported"
+                print(info)
+            except socket.timeout:
+                value = "Error contacting server"
         except Exception as error:
             value = "Error contacting server"
             print(error)
