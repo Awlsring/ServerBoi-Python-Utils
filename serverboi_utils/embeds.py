@@ -4,6 +4,7 @@ from time import gmtime, strftime
 from serverboi_utils.regions import ServiceRegion
 from serverboi_utils.states import translate_state
 import a2s
+import socket
 
 
 def form_workflow_embed(
@@ -87,9 +88,11 @@ def form_server_embed(
 
     if active:
         try:
-            info = a2s.info((ip, int(port)))
-        except a2s.socket.timeout as error:
+            info = a2s.info((ip, int(port + 1)))
+        except socket.timeout:
             value = "Server unreachable"
+        except Exception as error:
+            value = "Error contacting server"
         else:
             value = f"{info.player_count}/{info.max_players}"
             embed.add_field(name="Players", value=value, inline=True)
